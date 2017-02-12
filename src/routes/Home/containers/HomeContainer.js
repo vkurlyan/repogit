@@ -9,11 +9,11 @@ import { actions } from '../modules/repositoriesList'
 import HomeView from '../components/HomeView/HomeView'
 
 const mapDispatchToProps = {
-    ...actions
+  ...actions
 }
 
 const mapStateToProps = (state) => ({
-    ...state.repoList
-});
+  ...state.repoList
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeView)
