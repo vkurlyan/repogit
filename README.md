@@ -8,6 +8,8 @@ Technical stack: React, Redux, ES6, Babel, Webpack, React-Bootstrap, SCSS, ESLin
 
 # Setup
 
+Run commands:
+
 > git clone https://github.com/vkurlyan/repogit.git
 
 > cd repogit
