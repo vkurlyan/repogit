@@ -1,9 +1,12 @@
 import React, {PropTypes} from 'react'
-// import './RepoList.scss'
 import { ListGroupItem, ListGroup } from 'react-bootstrap';
 
 class RepoList extends React.PureComponent {
     render() {
+        if (!this.props.repositories) {
+            return;
+        }
+
         return (
             <ListGroup>
                 {this.props.repositories.map((repo) => (
@@ -18,7 +21,7 @@ class RepoList extends React.PureComponent {
 }
 
 RepoList.propTypes = {
-    repositories : PropTypes.array.isRequired,
+    repositories : PropTypes.array,
 }
 
 export default RepoList

@@ -14,8 +14,7 @@
     "lint:fix": "npm run lint -- --fix",
     "start": "better-npm-run start",
     "dev": "better-npm-run dev",
-    "test": "better-npm-run test",
-    "test:dev": "npm run test -- --watch",
+    "test": "jest",
     "deploy": "better-npm-run deploy",
     "deploy:dev": "better-npm-run deploy:dev",
     "deploy:prod": "better-npm-run deploy:prod",
@@ -73,7 +72,7 @@
     "type": "git",
     "url": "git+https://github.com/davezuko/react-redux-starter-kit.git"
   },
-  "author": "David Zukowski <david@zuko.me> (http://zuko.me)",
+  "author": "Valentyn Kurlian",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.15.3",
@@ -116,10 +115,10 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.0",
+    "babel-jest": "^18.0.0",
     "babel-plugin-istanbul": "^3.0.0",
-    "chai": "^3.4.1",
-    "chai-as-promised": "^6.0.0",
-    "chai-enzyme": "^0.6.1",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
     "cheerio": "^0.22.0",
     "codecov": "^1.0.1",
     "enzyme": "^2.0.0",
@@ -131,20 +130,28 @@
     "eslint-plugin-react": "^6.0.0",
     "eslint-plugin-standard": "^2.0.0",
     "express": "^4.14.0",
-    "karma": "^1.0.0",
-    "karma-coverage": "^1.0.0",
-    "karma-mocha": "^1.0.1",
-    "karma-mocha-reporter": "^2.0.0",
-    "karma-phantomjs-launcher": "^1.0.2",
-    "karma-webpack-with-fast-source-maps": "^1.9.2",
-    "mocha": "^3.0.1",
+    "jest": "^18.1.0",
     "nodemon": "^1.10.2",
     "phantomjs-prebuilt": "^2.1.12",
     "react-addons-test-utils": "^15.0.0",
+    "react-test-renderer": "^15.4.2",
     "redbox-react": "^1.2.10",
     "sinon": "^1.17.5",
     "sinon-chai": "^2.8.0",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.12.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   }
 }

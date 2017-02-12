@@ -1,13 +1,10 @@
 import React from 'react'
-import './CoreLayout.scss'
 import '../../styles/core.scss'
+import { Grid } from 'react-bootstrap';
+
 
 export const CoreLayout = ({ children }) => (
-  <div className='container'>
-    <div className='core-layout__viewport'>
-      {children}
-    </div>
-  </div>
+    <Grid>{children}</Grid>
 )
 
 CoreLayout.propTypes = {

@@ -1,0 +1,27 @@
+exports[`RepoList shows empty list 1`] = `
+<ul
+  className="list-group" />
+`;
+
+exports[`RepoList shows list of repositories 1`] = `
+<div
+  className="list-group">
+  <a
+    className="list-group-item"
+    href="/1"
+    target="_blank">
+    <b>
+      test-name
+    </b>
+    : Description 1
+  </a>
+  <a
+    className="list-group-item"
+    href="/2"
+    target="_blank">
+    <b>
+      test-name-2
+    </b>
+  </a>
+</div>
+`;

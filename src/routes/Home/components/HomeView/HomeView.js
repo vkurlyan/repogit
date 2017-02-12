@@ -49,7 +49,6 @@ class HomeView extends React.PureComponent {
 HomeView.propTypes = {
     showRepoList    : PropTypes.func.isRequired,
     repositories    : PropTypes.array.isRequired,
-    username        : PropTypes.string,
     validationError : PropTypes.string,
     serverError     : PropTypes.string,
     message         : PropTypes.string,

@@ -1,0 +1,83 @@
+exports[`HomeView shows form 1`] = `
+<div>
+  <div
+    className="page-header">
+    <h1>
+      List of a GitHub repositories
+    </h1>
+  </div>
+  <form
+    className="home__form"
+    onSubmit={[Function]}>
+    <div
+      className="form-group">
+      <label
+        className="control-label"
+        htmlFor="formBasicText">
+        Enter a GitHub username
+      </label>
+      <input
+        className="form-control"
+        id="formBasicText"
+        placeholder="Username"
+        type="text" />
+    </div>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      type="submit">
+      Submit
+    </button>
+  </form>
+  <ul
+    className="list-group" />
+</div>
+`;
+
+exports[`HomeView shows messages 1`] = `
+<div>
+  <div
+    className="page-header">
+    <h1>
+      List of a GitHub repositories
+    </h1>
+  </div>
+  <form
+    className="home__form"
+    onSubmit={[Function]}>
+    <div
+      className="form-group has-error">
+      <label
+        className="control-label"
+        htmlFor="formBasicText">
+        Enter a GitHub username
+      </label>
+      <input
+        className="form-control"
+        id="formBasicText"
+        placeholder="Username"
+        type="text" />
+      <div
+        className="home__error">
+        it\'s required field
+      </div>
+    </div>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      type="submit">
+      Submit
+    </button>
+    <div
+      className="home__error">
+      Server error
+    </div>
+    <div
+      className="home__message">
+      user has no repositories
+    </div>
+  </form>
+  <ul
+    className="list-group" />
+</div>
+`;
