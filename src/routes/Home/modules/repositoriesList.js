@@ -4,7 +4,6 @@ import { resolve, reject } from 'redux-simple-promise';
 // ------------------------------------
 // Constants
 // ------------------------------------
-export const SHOW_REPOSITORIES_LIST = 'SHOW_REPOSITORIES_LIST'
 export const FETCH_REPOSITORIES = 'FETCH_REPOSITORIES'
 export const INVALID_USERNAME = 'INVALID_USERNAME'
 
