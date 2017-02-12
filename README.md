@@ -8,7 +8,7 @@ Technical stack: React, Redux, ES6, Babel, Webpack, React-Bootstrap, SCSS, ESLin
 
 # Setup
 
-> https://github.com/vkurlyan/repogit.git
+> git clone https://github.com/vkurlyan/repogit.git
 
 > cd repogit
 
@@ -22,3 +22,6 @@ Then you will able open it on http://localhost:3000/
 
 > npm test
 
+# Run ES lint
+
+> npm run lint
