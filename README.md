@@ -18,7 +18,7 @@ Run commands:
 
 > npm start
 
-Then you will able to open it on http://localhost:3000/
+Open http://localhost:3000/
 
 # Run tests
 
